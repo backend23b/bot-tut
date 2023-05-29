@@ -7,18 +7,22 @@ chat_id = '1258594598'
 url = f'https://api.telegram.org/bot{TOKEN}/sendMessage'
 
 
-btn1 = {'text': '12'}
-btn2 = {'text': '13'}
-btn3 = {'text': 'Home'}
+btn_location = {
+    'text': '📍',
+    'request_location': True
+}
+btn_contact = {
+    'text': '📞',
+    'request_contact': True
+}
 
 
 data = {
     'chat_id': chat_id,
-    'text': 'Hello world',
+    'text': 'send your location',
     'reply_markup': {
         'keyboard': [
-            [btn1, btn2],
-            [btn3],
+            [btn_location, btn_contact]
         ],
         'resize_keyboard': True
     }
