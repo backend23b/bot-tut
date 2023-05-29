@@ -13,6 +13,7 @@ data = {
             ['Hello', 'World'],
             ['How are you?'],
         ],
+        'resize_keyboard': True
     }
 }
 
